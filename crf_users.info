@@ -1,0 +1,9 @@
+name = CRF Users
+description = CRF-specific user account settings
+core = 7.x
+package = CRF
+dependencies[] = features
+dependencies[] = humanitarianresponse_users
+features[features_api][] = api:1
+features[field][] = user-user-field_first_name
+features[field][] = user-user-field_last_name
