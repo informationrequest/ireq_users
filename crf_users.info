@@ -9,5 +9,6 @@ dependencies[] = humanitarianresponse_users
 dependencies[] = rules
 features[features_api][] = api:1
 features[field][] = user-user-field_first_name
+features[field][] = user-user-field_job_title
 features[field][] = user-user-field_last_name
 features[rules_config][] = rules_add_editor_user_for_newly_created_contact

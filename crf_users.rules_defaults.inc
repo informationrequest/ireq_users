@@ -21,6 +21,7 @@ function crf_users_default_rules_configuration() {
               "type" : "user",
               "param_field_first_name" : [ "node:field-contact-first-name" ],
               "param_field_last_name" : [ "node:field-contact-lastname" ],
+              "param_field_job_title" : [ "node:field-contact-job-title" ],
               "param_name" : [ "node:field-contact-email" ],
               "param_mail" : [ "node:field-contact-email" ]
             },
