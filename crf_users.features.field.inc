@@ -49,14 +49,14 @@ function crf_users_field_default_fields() {
       'description' => '',
       'display' => array(
         'default' => array(
-          'label' => 'above',
+          'label' => 'hidden',
           'module' => 'text',
           'settings' => array(
             'diff_custom' => 0,
             'diff_custom_settings' => array(),
           ),
           'type' => 'text_default',
-          'weight' => 0,
+          'weight' => '0',
         ),
         'entityreference_view_widget' => array(
           'label' => 'inline',
@@ -159,14 +159,14 @@ function crf_users_field_default_fields() {
       'description' => '',
       'display' => array(
         'default' => array(
-          'label' => 'above',
+          'label' => 'hidden',
           'module' => 'taxonomy',
           'settings' => array(
             'diff_custom' => 0,
             'diff_custom_settings' => array(),
           ),
-          'type' => 'taxonomy_term_reference_link',
-          'weight' => 2,
+          'type' => 'taxonomy_term_reference_plain',
+          'weight' => '2',
         ),
         'entityreference_view_widget' => array(
           'label' => 'inline',
@@ -236,14 +236,14 @@ function crf_users_field_default_fields() {
       'description' => '',
       'display' => array(
         'default' => array(
-          'label' => 'above',
+          'label' => 'hidden',
           'module' => 'text',
           'settings' => array(
             'diff_custom' => 0,
             'diff_custom_settings' => array(),
           ),
           'type' => 'text_default',
-          'weight' => 1,
+          'weight' => '1',
         ),
         'entityreference_view_widget' => array(
           'label' => 'inline',
