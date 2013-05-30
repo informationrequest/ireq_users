@@ -6,6 +6,7 @@ php = 5.2.4
 dependencies[] = crf_core
 dependencies[] = entity
 dependencies[] = entityreference
+dependencies[] = features
 dependencies[] = humanitarianresponse_contacts
 dependencies[] = rules
 dependencies[] = views
