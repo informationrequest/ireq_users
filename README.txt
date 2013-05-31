@@ -1,25 +1,23 @@
 crf_users
 ---------
 
-FILE: crf_users.features.field.inc
+== Roles (crf_users.features.user_role.inc)
 
-Implements hook_field_default_fields().
-  function crf_users_field_default_fields()
+CRF_manager
+CRF_user
 
-Fields:
-  user-user-field_clusters
-  user-user-field_first_name
-  user-user-field_job_title
-  user-user-field_last_name
-  user-user-field_locations
-  user-user-field_organisation
+  @TODO add permissions
 
+== Rules (crf_users.rules_defaults.inc)
 
-FILE: crf_users.rules_defaults.inc
+rules_add_editor_user_for_newly_created_contact
 
-Implements hook_default_rules_configuration().
-function crf_users_default_rules_configuration()
+  @TODO check if still needed
 
-Rules:
-  rules_add_editor_user_for_newly_created_contact
+== Views (crf_users.views_default.inc)
+
+users_request_recipients
+
+  Select users (recipient and referral) on request/report creation.
+
 

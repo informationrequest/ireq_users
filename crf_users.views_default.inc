@@ -12,7 +12,7 @@ function crf_users_views_default_views() {
 
   $view = new view();
   $view->name = 'users_request_recipients';
-  $view->description = '';
+  $view->description = 'Select users on request/report creation.';
   $view->tag = 'CRF';
   $view->base_table = 'users';
   $view->human_name = 'Users Request Recipients';
