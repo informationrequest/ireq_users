@@ -73,21 +73,21 @@ function crf_users_views_default_views() {
   $handler->display->display_options['fields']['field_job_title']['label'] = '';
   $handler->display->display_options['fields']['field_job_title']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_job_title']['type'] = 'taxonomy_term_reference_plain';
-  /* Field: User: Organisation */
-  $handler->display->display_options['fields']['field_organization']['id'] = 'field_organization';
-  $handler->display->display_options['fields']['field_organization']['table'] = 'field_data_field_organization';
-  $handler->display->display_options['fields']['field_organization']['field'] = 'field_organization';
-  $handler->display->display_options['fields']['field_organization']['label'] = '';
-  $handler->display->display_options['fields']['field_organization']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['field_organization']['type'] = 'taxonomy_term_reference_plain';
-  /* Contextual filter: User: Organisation (field_organization) */
-  $handler->display->display_options['arguments']['field_organization_tid']['id'] = 'field_organization_tid';
-  $handler->display->display_options['arguments']['field_organization_tid']['table'] = 'field_data_field_organization';
-  $handler->display->display_options['arguments']['field_organization_tid']['field'] = 'field_organization_tid';
-  $handler->display->display_options['arguments']['field_organization_tid']['default_argument_type'] = 'fixed';
-  $handler->display->display_options['arguments']['field_organization_tid']['summary']['number_of_records'] = '0';
-  $handler->display->display_options['arguments']['field_organization_tid']['summary']['format'] = 'default_summary';
-  $handler->display->display_options['arguments']['field_organization_tid']['summary_options']['items_per_page'] = '25';
+  /* Field: Field: Organization */
+  $handler->display->display_options['fields']['field_organizations']['id'] = 'field_organizations';
+  $handler->display->display_options['fields']['field_organizations']['table'] = 'field_data_field_organizations';
+  $handler->display->display_options['fields']['field_organizations']['field'] = 'field_organizations';
+  $handler->display->display_options['fields']['field_organizations']['label'] = '';
+  $handler->display->display_options['fields']['field_organizations']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_organizations']['type'] = 'taxonomy_term_reference_plain';
+  /* Contextual filter: Field: Organization (field_organizations) */
+  $handler->display->display_options['arguments']['field_organizations_tid']['id'] = 'field_organizations_tid';
+  $handler->display->display_options['arguments']['field_organizations_tid']['table'] = 'field_data_field_organizations';
+  $handler->display->display_options['arguments']['field_organizations_tid']['field'] = 'field_organizations_tid';
+  $handler->display->display_options['arguments']['field_organizations_tid']['default_argument_type'] = 'fixed';
+  $handler->display->display_options['arguments']['field_organizations_tid']['summary']['number_of_records'] = '0';
+  $handler->display->display_options['arguments']['field_organizations_tid']['summary']['format'] = 'default_summary';
+  $handler->display->display_options['arguments']['field_organizations_tid']['summary_options']['items_per_page'] = '25';
   /* Filter criterion: User: Active */
   $handler->display->display_options['filters']['status']['id'] = 'status';
   $handler->display->display_options['filters']['status']['table'] = 'users';
@@ -95,6 +95,13 @@ function crf_users_views_default_views() {
   $handler->display->display_options['filters']['status']['value'] = '1';
   $handler->display->display_options['filters']['status']['group'] = 1;
   $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
+  /* Filter criterion: User: Roles */
+  $handler->display->display_options['filters']['rid']['id'] = 'rid';
+  $handler->display->display_options['filters']['rid']['table'] = 'users_roles';
+  $handler->display->display_options['filters']['rid']['field'] = 'rid';
+  $handler->display->display_options['filters']['rid']['value'] = array(
+    139443077 => '139443077',
+  );
 
   /* Display: Entity Reference */
   $handler = $view->new_display('entityreference', 'Entity Reference', 'entityreference_1');
@@ -107,7 +114,7 @@ function crf_users_views_default_views() {
     'field_last_name' => 'field_last_name',
     'field_clusters' => 'field_clusters',
     'field_locations' => 'field_locations',
-    'field_organization' => 'field_organization',
+    'field_organizations' => 'field_organizations',
     'field_first_name' => 0,
     'field_job_title' => 0,
   );

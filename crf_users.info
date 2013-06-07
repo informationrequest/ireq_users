@@ -8,6 +8,7 @@ dependencies[] = entity
 dependencies[] = entityreference
 dependencies[] = features
 dependencies[] = humanitarianresponse_contacts
+dependencies[] = role_export
 dependencies[] = rules
 dependencies[] = views
 features[ctools][] = views:views_default:3.0
