@@ -74,20 +74,20 @@ function crf_users_views_default_views() {
   $handler->display->display_options['fields']['field_job_title']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_job_title']['type'] = 'taxonomy_term_reference_plain';
   /* Field: User: Organisation */
-  $handler->display->display_options['fields']['field_organisation']['id'] = 'field_organisation';
-  $handler->display->display_options['fields']['field_organisation']['table'] = 'field_data_field_organisation';
-  $handler->display->display_options['fields']['field_organisation']['field'] = 'field_organisation';
-  $handler->display->display_options['fields']['field_organisation']['label'] = '';
-  $handler->display->display_options['fields']['field_organisation']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['field_organisation']['type'] = 'taxonomy_term_reference_plain';
-  /* Contextual filter: User: Organisation (field_organisation) */
-  $handler->display->display_options['arguments']['field_organisation_tid']['id'] = 'field_organisation_tid';
-  $handler->display->display_options['arguments']['field_organisation_tid']['table'] = 'field_data_field_organisation';
-  $handler->display->display_options['arguments']['field_organisation_tid']['field'] = 'field_organisation_tid';
-  $handler->display->display_options['arguments']['field_organisation_tid']['default_argument_type'] = 'fixed';
-  $handler->display->display_options['arguments']['field_organisation_tid']['summary']['number_of_records'] = '0';
-  $handler->display->display_options['arguments']['field_organisation_tid']['summary']['format'] = 'default_summary';
-  $handler->display->display_options['arguments']['field_organisation_tid']['summary_options']['items_per_page'] = '25';
+  $handler->display->display_options['fields']['field_organization']['id'] = 'field_organization';
+  $handler->display->display_options['fields']['field_organization']['table'] = 'field_data_field_organization';
+  $handler->display->display_options['fields']['field_organization']['field'] = 'field_organization';
+  $handler->display->display_options['fields']['field_organization']['label'] = '';
+  $handler->display->display_options['fields']['field_organization']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_organization']['type'] = 'taxonomy_term_reference_plain';
+  /* Contextual filter: User: Organisation (field_organization) */
+  $handler->display->display_options['arguments']['field_organization_tid']['id'] = 'field_organization_tid';
+  $handler->display->display_options['arguments']['field_organization_tid']['table'] = 'field_data_field_organization';
+  $handler->display->display_options['arguments']['field_organization_tid']['field'] = 'field_organization_tid';
+  $handler->display->display_options['arguments']['field_organization_tid']['default_argument_type'] = 'fixed';
+  $handler->display->display_options['arguments']['field_organization_tid']['summary']['number_of_records'] = '0';
+  $handler->display->display_options['arguments']['field_organization_tid']['summary']['format'] = 'default_summary';
+  $handler->display->display_options['arguments']['field_organization_tid']['summary_options']['items_per_page'] = '25';
   /* Filter criterion: User: Active */
   $handler->display->display_options['filters']['status']['id'] = 'status';
   $handler->display->display_options['filters']['status']['table'] = 'users';
@@ -107,7 +107,7 @@ function crf_users_views_default_views() {
     'field_last_name' => 'field_last_name',
     'field_clusters' => 'field_clusters',
     'field_locations' => 'field_locations',
-    'field_organisation' => 'field_organisation',
+    'field_organization' => 'field_organization',
     'field_first_name' => 0,
     'field_job_title' => 0,
   );
