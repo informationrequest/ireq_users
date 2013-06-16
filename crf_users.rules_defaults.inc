@@ -12,6 +12,7 @@ function crf_users_default_rules_configuration() {
   $items['rules_add_editor_user_for_newly_created_contact'] = entity_import('rules_config', '{ "rules_add_editor_user_for_newly_created_contact" : {
       "LABEL" : "Add editor user for newly created contact",
       "PLUGIN" : "reaction rule",
+      "ACTIVE" : false,
       "REQUIRES" : [ "rules" ],
       "ON" : [ "node_insert" ],
       "IF" : [ { "data_is" : { "data" : [ "node:type" ], "value" : "contact" } } ],
