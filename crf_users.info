@@ -7,7 +7,6 @@ dependencies[] = crf_core
 dependencies[] = entity
 dependencies[] = entityreference
 dependencies[] = features
-dependencies[] = humanitarianresponse_contacts
 dependencies[] = role_export
 dependencies[] = rules
 dependencies[] = views
