@@ -12,15 +12,6 @@ dependencies[] = rules
 dependencies[] = views
 features[ctools][] = views:views_default:3.0
 features[features_api][] = api:2
-features[rules_config][] = rules_add_editor_user_for_newly_created_contact
 features[user_role][] = CRF_manager
 features[user_role][] = CRF_user
 features[views_view][] = users_request_recipients
-
-
-; Information added by drush on 2013-06-16
-version = "7.x-1.5-rc2+2-dev"
-core = "7.x"
-project = "crf_users"
-datestamp = "1371398701"
-
