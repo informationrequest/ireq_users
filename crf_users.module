@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the CRF Users feature.
+ */
+
+include_once 'crf_users.features.inc';
