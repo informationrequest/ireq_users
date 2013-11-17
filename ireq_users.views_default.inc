@@ -1,19 +1,19 @@
 <?php
 /**
  * @file
- * crf_users.views_default.inc
+ * ireq_users.views_default.inc
  */
 
 /**
  * Implements hook_views_default_views().
  */
-function crf_users_views_default_views() {
+function ireq_users_views_default_views() {
   $export = array();
 
   $view = new view();
   $view->name = 'users_request_recipients';
   $view->description = 'Select users on request/report creation.';
-  $view->tag = 'CRF';
+  $view->tag = 'IREQ';
   $view->base_table = 'users';
   $view->human_name = 'Users Request Recipients';
   $view->core = 7;
