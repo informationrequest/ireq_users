@@ -55,7 +55,7 @@ function ireq_users_views_default_views() {
   $handler->display->display_options['filters']['rid']['table'] = 'users_roles';
   $handler->display->display_options['filters']['rid']['field'] = 'rid';
   $handler->display->display_options['filters']['rid']['value'] = array(
-    139443077 => '139443077',
+    133465645 => '133465645',
   );
 
   /* Display: Entity Reference */
